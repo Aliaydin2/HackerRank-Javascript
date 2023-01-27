@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+    //Factoriel fonksiyonu yazdık. while döngüsü ile yazıldı. 
+    // fact=1 dedik çünkü 0 ile başlarsa çarpma işlemi kullanıldığı için hepsini sıfır yapmış olurduk.
+    function factorial(n){
+        let fact=1
+        while(n>1){
+        fact*=n
+        n-=1}
+        return fact}
+    
+        console.log(factorial(5));  //5*4*3*2*1 = Sonuç=> 120
+
+    </script>
+  </body>
+</html>
