@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //bir dizideki en büyük 2. sayıyı bulma
+
+      function getSecondLargest(nums) {
+        let result = nums.sort((a, b) => b - a); //Burada sort ile sayıları büyükten küçüğe doğru sıralıyoruz.
+        let secondLargest = 0;
+        let largestNumber = result[0]; //Yaptığımız sıralamada en büyük sayının Index'ini belirtiyoruz.
+        for (let i = 0; i < result.length; i++) {
+          //Burada for döngüsünü kullanıyoruz ve şartları belirterek sonucu elde ediyoruz.
+          if (result[i] < largestNumber && result[i] > secondLargest) {
+            secondLargest = result[i];
+          }
+        }
+        return secondLargest;
+      }
+    </script>
+  </body>
+</html>
