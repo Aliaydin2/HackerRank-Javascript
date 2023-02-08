@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //    string bir ifadeyi .split("") i boş çağırırarak harflerin dizisi haline getirirsiniz.
+        //    ---dizi haline getirme---
+
+
+        let string = "javascriptloops"
+        let myArray= string.split('')
+
+        console.log(Array.isArray(myArray))     // true
+        console.log(myArray)    //  (15) ['j', 'a', 'v', 'a', 's', 'c', 'r', 'i', 'p', 't', 'l', 'o', 'o', 'p', 's']
+
+        let vowels=`a, e, i, o, u`
+        let i = 0
+        let n =myArray.length
+        
+        for(i=0;i<n;i++){if ( vowels.includes(myArray[i])){console.log(myArray[i])}
+    }
+        for(i=0;i<n;i++){if ( !vowels.includes(myArray[i])){console.log(myArray[i])}
+    }
+
+    //------------------------------------------
+//SOLUTION 1
+//         function vowelsAndConsonants(s) {
+//     let myArray= s.split('')
+//     let vowels=`a, e, i, o, u`
+//     let n = s.length;
+//     for(let i=0;i<n;i++){if ( vowels.includes(myArray[i])){console.log(myArray[i])}
+//     };
+//     for(let i=0;i<n;i++){if ( !vowels.includes(myArray[i])){console.log(myArray[i])}
+//     };
+// }
+
+    //      ------------------------------------------
+//SOLUTION 2
+    // function vowelsAndConsonants(s) {
+    // // for(let i=0;i<s.length;i++){if ( s.charAt(i).match(/[aeiou]/)){console.log(s.charAt(i))}};
+    // // for(let i=0;i<s.length;i++){if ( s.charAt(i).match(/[^aeiou]/)){console.log(s.charAt(i))}};
+    //     }
+                    
+    </script>
+</body>
+</html>
