@@ -1,2 +1,3 @@
 # HackerRank-Javascript
-Kodluyoruz javascript eğitimi hackerRank çözümlerim
+Kodluyoruz javascript eğitimi hackerRank yönlendirmesindeki çözümler;
+

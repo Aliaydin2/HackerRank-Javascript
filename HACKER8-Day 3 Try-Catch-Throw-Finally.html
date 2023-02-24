@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1></h1>
+
+    <script>
+      // istenilen durum s in ters string olarak yazilmasi ve yine string olmasi.
+      //ancak hata olmasi durumunda (ornegin string degil number verildigi bir durumda ) uyarinin yanlizca "s.split is not a function" ve "1234" (string in kendisi) yazilmasi isteniyor.
+      let s = 1234; //su an number halinde
+      try {
+        if (typeof s == "number") throw `s.split is not a function `;
+        let newS = s.split("");
+        newS.reverse();
+        let returnS = newS.join("");
+        console.log(returnS);
+      } catch (err) {
+        console.log(`${err}`);
+        console.log(`${s}`);
+      } finally {
+        document.write("ALİ AYDIN"); //try tamamlandıktan sonra hata olsada olmasada çalışacak olan kodlar.
+      }
+    </script>
+  </body>
+</html>
